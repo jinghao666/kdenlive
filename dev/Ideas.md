@@ -12,13 +12,19 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Improved keyframe editing** | | For example, edit all keyframes together: #259 |
+| **Improved keyframe editing** | | For example, edit all keyframes together: #259, add more easing modes #572 (note: CSS animations also contain easing modes) |
 | **Project Bin improvements** | | Improve visual clarity and UX for project bin. For example, add a bit of spacing between clip entries, fix #283. See also #287, #291 |
-| **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350 |
-| **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249). |
+| **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. |
+| **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
-| **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550) and also get inputs from [other editing tools][hb]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). |
+| **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][hb]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
 | **General usability improvements | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593)
+
+## Performance
+
+| Topic | Benefit | Description |
+| --- | --- | --- |
+| **Rendered preview** | | Pre-render the selected zone while editing when normal playback stutters. (implemented) |
 
 
 # Editing Workflow
@@ -39,7 +45,7 @@ GitLab issues are considered until 2020-03-28.
 | --- | --- | --- |
 | **Track types ** | | #421 – also support video-only tracks |
 | **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547 |
-| **Nested timelines** | Larger projects are easier to structure and to edit in post | Edit some clips on a timeline and add the result on the main timeline, see #226 |
+| **Nested timelines** | Larger projects are easier to structure and to edit in post | Edit some clips on a timeline and add the result on the main timeline, see #226, or combine clips as blender does it, see #422 |
 
 ## Effects
 
@@ -55,6 +61,13 @@ GitLab issues are considered until 2020-03-28.
 | **Enhanced Audio Recorder** | Users which record audio directly within Kdenlive | See #105. |
 | **Improved audio recording workflow** | YouTubers | Make it easier for users to record audio, e.g. as #594 |
 | **Auto-cut silence** | YouTubers | When recording voice, mute when the person is not talking. This could be an audio effect (threshold) which works in post, or directly included in the recorder (would not work for existing audio). See #247 |
+| **Enhanced Audio Mixer** | | Support more than 2 audio channels as #382. Add a master mixer for audio, as in #357 |
+
+# Titler
+
+| Topic | Benefit | Description |
+| --- | --- | --- |
+| **Improved titler handling** | | If the name of a duplicated title is auto-generated, use text content of the title as title, see #320 |
 
 # Projects
 
