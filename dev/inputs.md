@@ -2,8 +2,9 @@
 
 *This page lists inputs for ideas on improving Kdenlive.*
 
-* [Feature Requests](https://invent.kde.org/kde/kdenlive/issues?label_name%5B%5D=Feature+Request)
-* [Enhancements](https://invent.kde.org/kde/kdenlive/issues?label_name%5B%5D=Enhancement&state=opened)
+* [Feature Requests](https://invent.kde.org/kde/kdenlive/issues?label_name%5B%5D=Feature+Request) on GitLab
+* [Enhancements](https://invent.kde.org/kde/kdenlive/issues?label_name%5B%5D=Enhancement&state=opened) on GitLab
+* [Video Editing Applications Handbook](https://kdenlive.org/en/video-editing-applications-handbook/) – comparison with other professional applications
 * [Phabricator Workboard](https://phabricator.kde.org/project/view/40/)
 * [Kdenlive wiki](https://community.kde.org/Kdenlive)
 * [18.12 release notes](https://community.kde.org/Kdenlive/Development/ReleaseNotes-18.12)
