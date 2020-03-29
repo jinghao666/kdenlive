@@ -2,9 +2,15 @@
 
 What should be discussed about ideas?
 
-* Bigger picture: Is the idea related to another topic and should be tackled from a more general perspective (e.g. change the timeline behaviour altogether instead of adjusting here and there)
+* Bigger picture: Is the idea related to another topic and should be tackled from a more general perspective (e.g. change the timeline behaviour altogether and redesign the clip monitor for trimming, instead of adjusting here and there)
 * What is the benefit of the idea? Does it target a reasonably large user group to justify the development effort?
 * What is the estimated effort? If it is hard to estimate, what details or what knowledge is missing?
+
+What are possible goals?
+
+* Provide a workflow that is efficient enough to work on long projects
+* Provide core functionality that is expected from a professional video editor
+* Attract more developers to speed up development
 
 GitLab issues are considered until 2020-03-28.
 
@@ -17,7 +23,7 @@ GitLab issues are considered until 2020-03-28.
 | **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. |
 | **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
-| **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][hb]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
+| **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][kbd]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
 | **General usability improvements | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593)
 
 ## Performance
@@ -31,7 +37,7 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Advanced editing in timeline ** | Users of other professional video editing applications are familiar with the editing workflow from other programs. | #225 |
+| **Advanced editing in timeline ** | Users of other professional video editing applications are familiar with the editing workflow from other programs. | Editing includes both *[trimming][trim]* and *[3-point editing][lift]*. Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well, and inserting/(re-)moving clips on the timeline. See also #225 |
 
 ## Colour Correction
 
@@ -58,10 +64,11 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
+| **Professional Audio Support** | | Improve [working with audio][audio]. Cross-fade audio on a single track. Support more than 2 audio channels as #382. Add a master mixer for audio, as in #357. Support audio busses where audio output can be sent to, edited with an effect, and then mixed together in master. 
 | **Enhanced Audio Recorder** | Users which record audio directly within Kdenlive | See #105. |
 | **Improved audio recording workflow** | YouTubers | Make it easier for users to record audio, e.g. as #594 |
 | **Auto-cut silence** | YouTubers | When recording voice, mute when the person is not talking. This could be an audio effect (threshold) which works in post, or directly included in the recorder (would not work for existing audio). See #247 |
-| **Enhanced Audio Mixer** | | Support more than 2 audio channels as #382. Add a master mixer for audio, as in #357 |
+
 
 # Titler
 
@@ -87,4 +94,8 @@ GitLab issues are considered until 2020-03-28.
 Where is my Light Graffiti effect? {:-S
 
 [hb]: https://kdenlive.org/en/video-editing-applications-handbook/
+[kbd]: https://kdenlive.org/en/video-editing-applications-handbook/#shortcuts
 [sv]: http://slowmovideo.granjow.net/
+[trim]: https://kdenlive.org/en/video-editing-applications-handbook/#trim
+[lift]: https://kdenlive.org/en/video-editing-applications-handbook/#3point
+[audio]: https://kdenlive.org/en/video-editing-applications-handbook/#audio
