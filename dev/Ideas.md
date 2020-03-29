@@ -24,7 +24,7 @@ GitLab issues are considered until 2020-03-28.
 | **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
 | **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][kbd]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
-| **General usability improvements | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593)
+| **General usability improvements** | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593)
 
 ## Performance
 
@@ -37,7 +37,7 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Advanced editing in timeline ** | Users of other professional video editing applications are familiar with the editing workflow from other programs. | Editing includes both *[trimming][trim]* and *[3-point editing][lift]*. Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well, and inserting/(re-)moving clips on the timeline. See also #225 |
+| **Advanced editing in timeline** | Users of other professional video editing applications are familiar with the editing workflow from other programs. | Editing includes both *[trimming][trim]* and *[3-point editing][lift]*. Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well, and inserting/(re-)moving clips on the timeline. See also #225 |
 
 ## Colour Correction
 
@@ -49,7 +49,7 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Track types ** | | #421 – also support video-only tracks |
+| **Track types** | | #421 – also support video-only tracks |
 | **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547 |
 | **Nested timelines** | Larger projects are easier to structure and to edit in post | Edit some clips on a timeline and add the result on the main timeline, see #226, or combine clips as blender does it, see #422 |
 
