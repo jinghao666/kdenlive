@@ -10,12 +10,12 @@
 
 ## Formats
 
-| Name | Description |
-| --- | --- |
+| Name | Team | Description |
+| --- | --- | --- |
 | EDL | |
 | AAF | |
 | CDL | |
-| [OpenTimelineIO](http://opentimeline.io/) | |
+| [OpenTimelineIO](http://opentimeline.io/) | Vincent |
 
 
 ## Other video editors and tools
