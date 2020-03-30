@@ -20,11 +20,16 @@ GitLab issues are considered until 2020-03-28.
 | --- | --- | --- |
 | **Improved keyframe editing** | | For example, edit all keyframes together: #259, add more easing modes #572 (note: CSS animations also contain easing modes) |
 | **Project Bin improvements** | | Improve visual clarity and UX for project bin. For example, add a bit of spacing between clip entries, fix #283. See also #287, #291 |
-| **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. |
+| **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. Remove all effects on a clip, as in [T9797][T9797]. Check if resetting with RMB is the standard way of if double-click is better (see [T10295][T10295]). |
 | **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
 | **Shortcuts** | | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][kbd]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
-| **General usability improvements** | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593)
+| **General usability improvements** | Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593), use timeline scrubbing/zooming for faster navigation in the timeline, see [T10897][T10897] |
+
+[T9797]: https://phabricator.kde.org/T9797
+[T10295]: https://phabricator.kde.org/T10295
+[T10897]: https://phabricator.kde.org/T10897
+
 
 ## Performance
 
@@ -38,6 +43,9 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Advanced editing in timeline** | Users of other professional video editing applications are familiar with the editing workflow from other programs. | Editing includes both *[trimming][trim]* and *[3-point editing][lift]*. Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well, and inserting/(re-)moving clips on the timeline. See also #225 |
+| **Editoral Collaboration** | [T10260][T10260] | 
+
+[T10260]: https://phabricator.kde.org/T10260
 
 ## Colour Correction
 
@@ -50,8 +58,11 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Track types** | | #421 – also support video-only tracks |
-| **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547 |
+| **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547. Merge clips again after they have been split, see [T10846][T10846]. |
 | **Nested timelines** | Larger projects are easier to structure and to edit in post | Edit some clips on a timeline and add the result on the main timeline, see #226, or combine clips as blender does it, see #422 |
+
+[T10846]: https://phabricator.kde.org/T10846
+
 
 ## Effects
 
