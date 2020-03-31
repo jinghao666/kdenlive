@@ -33,7 +33,7 @@ GitLab issues are considered until 2020-03-28.
 [T9797]: https://phabricator.kde.org/T9797
 [T10295]: https://phabricator.kde.org/T10295
 [T10897]: https://phabricator.kde.org/T10897
-[imp-kf]: /dev/ideas/Advanced%20Editing****
+[imp-kf]: /dev/ideas/Advanced%20Editing
 
 
 ## Performance
