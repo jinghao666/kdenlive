@@ -14,7 +14,11 @@ What are possible goals?
 
 GitLab issues are considered until 2020-03-28.
 
+
 # UI and UX
+
+* How can we **improve user guidance?** Use modern methods to help the user find features and understand what they do.
+* **Is the workflow intuitive** or can it be improved (e.g. less clicks, more clarity in navigation or switching widgets)?
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
