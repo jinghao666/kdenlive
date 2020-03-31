@@ -22,7 +22,7 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Improved keyframe editing** | | For example, edit all keyframes together: #259, add more easing modes #572 (note: CSS animations also contain easing modes) |
+| [**Improved keyframe editing**][imp-kf] | | For example, edit all keyframes together: #259, add more easing modes #572 (note: CSS animations also contain easing modes) |
 | **Project Bin improvements** | | Improve visual clarity and UX for project bin. For example, add a bit of spacing between clip entries, fix #283. See also #287, #291 |
 | **Improve effect experience** | Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. Remove all effects on a clip, as in [T9797][T9797]. Check if resetting with RMB is the standard way of if double-click is better (see [T10295][T10295]). |
 | **Workspaces for specialised workflows** | Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
@@ -33,6 +33,7 @@ GitLab issues are considered until 2020-03-28.
 [T9797]: https://phabricator.kde.org/T9797
 [T10295]: https://phabricator.kde.org/T10295
 [T10897]: https://phabricator.kde.org/T10897
+[imp-kf]: /dev/ideas/Advanced%20Editing****
 
 
 ## Performance
