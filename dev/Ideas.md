@@ -79,8 +79,10 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Speed Change** | ❤️ | Reverse parts of videos easily (#555, #224). Advanced speed editing including slow-motion can be accomplished e.g. with [slowmoVideo][sv], but including slowmoVideo requires building a slow-motion library which can be used by MLT e.g. |
+| [**Speed Change**][speed] | ❤️ | Reverse parts of videos easily (#555, #224). Advanced speed editing including slow-motion can be accomplished e.g. with [slowmoVideo][sv], but including slowmoVideo requires building a slow-motion library which can be used by MLT e.g. |
 | **Effect groups** | | #4 |
+
+[speed]: /dev/ideas/Speed-Change
 
 # Audio
 
