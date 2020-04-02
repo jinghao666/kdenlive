@@ -88,9 +88,11 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| **Professional Audio Support** | 🎥 | Improve [working with audio][audio]. Cross-fade audio on a single track. Support more than 2 audio channels as #382. Add a master mixer for audio, as in #357. Support audio busses where audio output can be sent to, edited with an effect, and then mixed together in master. |
+| [**Professional Audio Support**][aaw] | 🎥 | Improve [working with audio][audio]. Cross-fade audio on a single track. Support more than 2 audio channels as #382. Add a master mixer for audio, as in #357. Support audio busses where audio output can be sent to, edited with an effect, and then mixed together in master. |
 | **Enhanced Audio Recording Workflow** | YouTubers, Users which record audio directly within Kdenlive | Make it easier for users to record audio, e.g. as #594. Also, see #105. |
 | **Auto-cut silence** | ❤️ – YouTubers | When recording voice, mute when the person is not talking. This could be an audio effect (threshold) which works in post, or directly included in the recorder (would not work for existing audio). See #247 |
+
+[aaw]: /dev/ideas/Advanced-Audio-Workflow
 
 
 # Titler
