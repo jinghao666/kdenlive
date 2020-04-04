@@ -35,7 +35,7 @@ GitLab issues are considered until 2020-03-28.
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
 | **Shortcuts** | 🎥 | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][kbd]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
 | **General usability improvements** | 🎥 – Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593), use timeline scrubbing/zooming for faster navigation in the timeline, see [T10897][T10897] |
-| **Icons** | | Add more custom icons. For example, “Insert zone in project bin” is the clip icon – make it look related to set in and out points. |
+| **Icons** | | Add more custom icons. For example, “Insert zone in project bin” is the clip icon – make it look related to set in and out points. Consistent icon language for Select/Razor/Spacer tools |
 
 [T9797]: https://phabricator.kde.org/T9797
 [T10295]: https://phabricator.kde.org/T10295
