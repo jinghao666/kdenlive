@@ -54,6 +54,7 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Rendered preview** | 🎥 | Pre-render the selected zone while editing when normal playback stutters. (implemented) |
+| **GPU support** | 🎥 – Everybody loves x-fold speed-up | Make use of GPUs to render videos and scopes. Use [ArrayFire](https://arrayfire.com/) e.g. to stay hardware independent. Ask Nicolas for his research. |
 
 
 # Editing Workflow
@@ -91,6 +92,7 @@ GitLab issues are considered until 2020-03-28.
 | **Effect groups** | | #4 |
 
 [speed]: /dev/ideas/Speed-Change
+
 
 # Audio
 
