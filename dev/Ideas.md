@@ -21,6 +21,13 @@ What are possible benefits?
 GitLab issues are considered until 2020-03-28.
 
 
+# Web Site
+
+| Topic | Benefit | Description |
+| --- | --- | --- |
+| **Improved download experience** | ❤️ – new users have no troubles downloading Kdenlive | Always link to the newest Kdenlive.AppImage in the download section |
+
+
 # UI and UX
 
 * How can we **improve user guidance?** Use modern methods to help the user find features and understand what they do.
