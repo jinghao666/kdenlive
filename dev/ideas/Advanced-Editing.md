@@ -24,3 +24,8 @@ Clip operations can be chosen with a shortcut, which then affects the selected a
 Questions:
 
 * What should happen in insert mode when moving a clip which is already on the timeline? Currently it behaves as if a new clip was inserted.
+
+
+## Other ideas
+
+* Snap cursor to clip boundaries in the timeline, e.g. when holding Shift → workflow: Snap to end of a clip, then insert clip there with `V` in insert mode
