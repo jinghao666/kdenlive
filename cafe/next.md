@@ -32,4 +32,12 @@ Very up to community if that is desired!
 * Pick one or two topics from the Ideas page and discuss them
 * What is in for the next minor/major version?
 
+### Processes
+
+* Workflow for handling issues?
+  * Discuss feature requests e.g. in the café and then create an idea, or …
+* MR handling
+  * Who can review MRs?
+  * How fast should that happen?
+
 [mlp]: https://firstround.com/review/dont-serve-burnt-pizza-and-other-lessons-in-building-minimum-lovable-products/
