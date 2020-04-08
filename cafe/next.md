@@ -39,5 +39,8 @@ Very up to community if that is desired!
 * MR handling
   * Who can review MRs?
   * How fast should that happen?
+* Where/how to discuss architectural topics (decisions, refactorings, …)
+  * List with topics, then discuss them in the café?
+
 
 [mlp]: https://firstround.com/review/dont-serve-burnt-pizza-and-other-lessons-in-building-minimum-lovable-products/
