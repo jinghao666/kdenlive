@@ -37,12 +37,12 @@ GitLab issues are considered until 2020-03-28.
 | --- | --- | --- |
 | **Improved keyframe editing** | | For example, edit all keyframes together: #259, add more easing modes #572 (note: CSS animations also contain easing modes) |
 | **Project Bin improvements** | 🤓 | Improve visual clarity and UX for project bin. For example, add a bit of spacing between clip entries, fix #283. See also #287, #291. Show start frame of zones and not just duration. Open and collapse folders with arrow keys ←→ instead of forwarding the clip in the clip monitor. Make tags more visible and allow to filter by tag. Add “Move to folder” to context menu to speed up clip sorting (rather than dragging the clip in a long list to the top and waiting for the content to scroll). |
-| **Improve effect experience** | 🤓 – Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. Remove all effects on a clip, as in [T9797][T9797]. Check if resetting with RMB is the standard way of if double-click is better (see [T10295][T10295]). |
+| **Improve effect experience** | 🤓 – Applying effects is faster | Improve visual clarity of the effects list (coloured number boxes do not help too much e.g.), keep looping a zone while modifying effects (see #293), check if interactions work (e.g. scrolling has a double assignment: It scrolls the effect properties page, but also the keyframe item). See also #350. Add comments to effects, see #582. Remove all effects on a clip, as in [T9797][T9797]. Check if resetting with RMB is the standard way of if double-click is better (see [T10295][T10295]). Check for consistency in the effect widgets in general and check that numeric input is possible (also for Lift/Gamma/Gain value bar). |
 | **Workspaces for specialised workflows** | 🤓 – Faster editing in an editing stage | Change what widgets are shown and how Kdenlive behaves depending on the current editing stage (audio, effects, color correction, …); see #407. Reset layouts (#249) and include them in the project file #417 |
 | **Window management** | | Make a widget cover the whole window for better focus, see #519. Auto-adjust the clip monitor width to the video aspect ratio to give other widgets more space. |
 | **Shortcuts** | 🎥 | Give shortcuts another visit and make sure they are consistent (see e.g. #550, #563) and also get inputs from [other editing tools][kbd]. Create a shortcut guideline document where shortcuts are listed including the reasoning behind (e.g. in and out points with i and o because of the words and because the keys are next to each other). Add shortcuts for different playback speeds as in #406. |
 | **General usability improvements** | 🎥 – Kdenlive provides a consistent and practical UX | Redesign clip popups (e.g. other location) to avoid that they overlap controls (#592), make it easier to resize the timeline (#593), use timeline scrubbing/zooming for faster navigation in the timeline, see [T10897][T10897] |
-| **Icons** | | Add more custom icons. For example, “Insert zone in project bin” is the clip icon – make it look related to set in and out points. Consistent icon language for Select/Razor/Spacer tools |
+| **Icons** | | Add more custom icons. For example, “Insert zone in project bin” is the clip icon – make it look related to set in and out points. Consistent icon language for Select/Razor/Spacer tools. Also have an “Enable Effect” icon. |
 
 [T9797]: https://phabricator.kde.org/T9797
 [T10295]: https://phabricator.kde.org/T10295
@@ -71,6 +71,7 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
+| **Scope improvements** | Simon wants it | Add logarithmic scale to histogram. Check what the `%%` mean in the Vectorscope. Show better colour levels in the vector scope when everything gathers on one point. |
 | **Secondary Colour Correction** | | Colour Correction for parts of the image. This first requires a solid general colour correction workflow. |
 
 ## Timeline
@@ -78,7 +79,7 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Track types** | | #421 – also support video-only tracks |
-| **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547. Merge clips again after they have been split, see [T10846][T10846]. |
+| **Various timeline enhancements** | | Use user-defined categories (name and colour) for guidelines, see #547. Merge clips again after they have been split, see [T10846][T10846]. Upgrade the timeline ruler and e.g. highlight seconds and not just every 25th pixel. |
 | **Nested timelines** | Larger projects are easier to structure and to edit in post | Edit some clips on a timeline and add the result on the main timeline, see #226, or combine clips as blender does it, see #422 |
 
 [T10846]: https://phabricator.kde.org/T10846
