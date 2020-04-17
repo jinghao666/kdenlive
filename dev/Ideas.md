@@ -106,6 +106,13 @@ GitLab issues are considered until 2020-03-28.
 [aaw]: /dev/ideas/Advanced-Audio-Workflow
 
 
+# Video
+
+| Topic | Benefit | Description |
+| --- | --- | --- |
+| **Video orientation handling** | ❤️ – everybody taking pictures with a Smartphone, Action Cam, … | Change orientation of videos before they are used (e.g. a video that would mistakenly be inserted in portrait mode) |
+
+
 # Titler
 
 | Topic | Benefit | Description |
