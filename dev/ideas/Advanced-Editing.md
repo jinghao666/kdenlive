@@ -29,3 +29,4 @@ Questions:
 ## Other ideas
 
 * Snap cursor to clip boundaries in the timeline, e.g. when holding Shift → workflow: Snap to end of a clip, then insert clip there with `V` in insert mode
+* Also support [4 point editing](https://www.premiumbeat.com/blog/3-and-4-point-editing-premiere-pro/)?
