@@ -61,18 +61,23 @@ GitLab issues are considered until 2020-03-28.
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
-| [**Advanced editing in timeline**][imp-kf] | 🎥 – Users of other professional video editing applications are familiar with the editing workflow from other programs. | Editing includes both *[trimming][trim]* and *[3-point editing][lift]*. Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well, and inserting/(re-)moving clips on the timeline. See also #225 |
+| [**3-point editing in timeline**][i-3pe] | 🎥 – Users of other professional video editing applications are familiar with the editing workflow from other programs. | Improve inserting/(re-)moving clips on the timeline. See the description on *[3-point editing][lift]*. See also #225 |
+| **[Trimming][i-trim]** | 🎥 – Users of other professional video editing applications are familiar with the editing workflow from other programs. | Improve trimming of clips directly in the timeline whereby adjacent clips are trimmed as well. See the description on *[trimming][trim]*.
 | **Editoral Collaboration** | | [T10260][T10260] | 
 
 [T10260]: https://phabricator.kde.org/T10260
-[imp-kf]: /dev/ideas/Advanced%20Editing
+[i-3pe]: /dev/ideas/3-Point-Editing
+[i-trim]: /dev/ideas/Trimming
+
 
 ## Colour Correction
 
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Scope improvements** | Simon wants it | Add logarithmic scale to histogram. Check what the `%%` mean in the Vectorscope. Show better colour levels in the vector scope when everything gathers on one point. |
-| **Secondary Colour Correction** | | Colour Correction for parts of the image. This first requires a solid general colour correction workflow. |
+| **[Secondary Colour Correction][i-scc]** | | Colour Correction for parts of the image. This first requires a solid general colour correction workflow. |
+
+[i-scc]: /dev/ideas/Secondary-Colour-Correction
 
 ## Timeline
 
