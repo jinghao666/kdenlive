@@ -16,4 +16,6 @@ In Audio, cross-fading refers to the process of fading out one audio track while
 * Cross-fading is desired to transition seamlessly from one recording to another, e.g. two consecutive recordings
 * Same-track cross-fading is useful because only one track is needed.
 
+The same applies for video clips where the images of the two clips are blended together.
+
 [cfa]: https://www.homebrewaudio.com/crossfade-meaning-what-does-it-mean-to-crossfade-audio/
