@@ -1,6 +1,19 @@
-
 ## Status
 
 * [ ] It is explained clearly what the feature is supposed to do
 * [ ] It is clear how this can be implemented in Kdenlive
 * [ ] Usability and consistency is checked
+
+## Intro
+
+Inputs:
+
+* [What Does It Mean To Crossfade Audio?][cfa]
+
+In Audio, cross-fading refers to the process of fading out one audio track while fading in another one. For same-track cross-fading, this is typically accomplished by the user by letting two audio clips overlap each other, which automatically generates a cross-fade effect.
+
+* Fading is desired to avoid clicking noise when cutting audio if the audio curve does not end at 0.
+* Cross-fading is desired to transition seamlessly from one recording to another, e.g. two consecutive recordings
+* Same-track cross-fading is useful because only one track is needed.
+
+[cfa]: https://www.homebrewaudio.com/crossfade-meaning-what-does-it-mean-to-crossfade-audio/
