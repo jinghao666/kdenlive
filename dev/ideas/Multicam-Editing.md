@@ -27,6 +27,8 @@ Without a multicam sequence, the user would manually have to cut the clip pieces
 
 With a multicam sequence, the user would only add the sequence to a timeline track and then on-the-fly decide which clip from the sequence to show; the selection is remembered by the multicam sequence.
 
+The multicam sequence is a clip that contains both video and audio.
+
 
 ## Questions
 
