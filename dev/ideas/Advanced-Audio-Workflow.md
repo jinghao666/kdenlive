@@ -11,11 +11,13 @@
 
 ## Intro
 
-This idea is about handling audio when there are not only stereo clips.
+This topic is about handling audio channels and tracks correctly and in a more professional workflow. Users should be able to choose which audio channels of an input file to use, and in which way to use them.
+
+Currently, support for tracks and channels is limited. For example, for a clip with two tracks and two channels each, it is only possible to use the channels of one of the tracks.
 
 Inputs:
 
-* [In-depth introduction](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382.
+* [In-depth introduction to audio editing](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382.
 * [Channel Export Mapping in Audacity](https://manual.audacityteam.org/man/advanced_mixing_options.html)
 
 
@@ -33,7 +35,7 @@ Technically, clips (video+audio like .mp4, or audio only like .wav) are primaril
 
 To give two examples:
 
-* A video clip could now contain a video stream and two audio streams, one with stereo English language (i.e. 2 channels) and one with 5.1 Italian language (i.e. 6 channels).
+* A video clip could now contain a video stream and two audio streams, one with stereo English language and one with stereo Italian language.
 * An audio clip from a field recording (with a multi-channel recorder) could contain 5 channels where CH1/CH2 are a stereo voice recording, CH3 is a sound effect mono channel, and CH4/CH5 are used for stereo environment recording.
 
 The channels can be combined in an arbitrary way in the input clip, but for editing they are used separately, for example the audio clip’s two voice channels would be used on an audio track in the timeline, the sound effect channel on another track.
