@@ -23,7 +23,9 @@ Inputs:
 
 ## Additional notes
 
-### Clip Basics: 
+Multi-channel and multi-track audio files can easily be created and edited in [Audacity](https://www.audacityteam.org/) for testing.
+
+### Clip Basics:
 
 In the simple case (phone/camera recording), video clips have one stereo audio track. There are many more options however.
 
@@ -36,7 +38,7 @@ Technically, clips (video+audio like .mp4, or audio only like .wav) are primaril
 To give two examples:
 
 * A video clip could now contain a video stream and two audio streams, one with stereo English language and one with stereo Italian language.
-* An audio clip from a field recording (with a multi-channel recorder) could contain 5 channels where CH1/CH2 are a stereo voice recording, CH3 is a sound effect mono channel, and CH4/CH5 are used for stereo environment recording.
+* An audio clip from a field recording (with a multi-channel recorder) could contain 5 tracks with one channel each where tracks 1 and 2 are used for stereo voice recording, track 3 is used for sound effects, and tracks 4 and 5 are used for stereo environment recording. 
 
 The channels can be combined in an arbitrary way in the input clip, but for editing they are used separately, for example the audio clip’s two voice channels would be used on an audio track in the timeline, the sound effect channel on another track.
 
