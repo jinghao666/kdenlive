@@ -136,13 +136,9 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Project Recovery after Crash** | 🤓 – Users are less likely to lose work. | Enhance project recovery. Check if the backup time interval is suitable. If a project crashes on load, catch the crash and offer to load an older version. See also #309, #418. |
-| **Stability improvements** | 🤓 – Users get less random crashes | Do not crash because MLT throws an exception (e.g. in `const uchar *imagedata = frame->get_image(format, ow, oh);` in `kthumb.cpp`), [see here][419603]. |
+| **Stability improvements** | 🤓 – Users get less random crashes. Download counts show that patch releases are downloaded more often than `.0` releases. | Do not crash because MLT throws an exception (e.g. in `const uchar *imagedata = frame->get_image(format, ow, oh);` in `kthumb.cpp`), [see here][419603]. |
 
 [419603]: https://bugs.kde.org/show_bug.cgi?id=419603
-
-# Random
-
-Where is my Light Graffiti effect? {:-S
 
 [hb]: https://kdenlive.org/en/video-editing-applications-handbook/
 [kbd]: https://kdenlive.org/en/video-editing-applications-handbook/#shortcuts
