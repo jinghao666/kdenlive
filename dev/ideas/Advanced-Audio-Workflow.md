@@ -15,9 +15,9 @@ This topic is about handling audio channels and tracks correctly and in a more p
 
 Currently, support for tracks and channels is limited. For example, for a clip with two tracks and two channels each, it is only possible to use the channels of one of the tracks.
 
-Inputs:
+### Inputs
 
-* [In-depth introduction to audio editing](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382.
+* [In-depth introduction to audio editing](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382. This is the main document for this idea.
 * [Channel Export Mapping in Audacity](https://manual.audacityteam.org/man/advanced_mixing_options.html)
 
 
@@ -25,7 +25,7 @@ Inputs:
 
 Multi-channel and multi-track audio files can easily be created and edited in [Audacity](https://www.audacityteam.org/) for testing.
 
-### Clip Basics:
+### Clip Basics
 
 In the simple case (phone/camera recording), video clips have one stereo audio track. There are many more options however.
 
@@ -40,7 +40,9 @@ To give two examples:
 * A video clip could now contain a video stream and two audio streams, one with stereo English language and one with stereo Italian language.
 * An audio clip from a field recording (with a multi-channel recorder) could contain 5 tracks with one channel each where tracks 1 and 2 are used for stereo voice recording, track 3 is used for sound effects, and tracks 4 and 5 are used for stereo environment recording. 
 
-The channels can be combined in an arbitrary way in the input clip, but for editing they are used separately, for example the audio clip’s two voice channels would be used on an audio track in the timeline, the sound effect channel on another track.
+The channels can be combined in an arbitrary way in the input clip, but for editing they are used separately, for example the audio clip’s two voice channels would be used on one audio track in the timeline, the sound effect channel of the same clip would be used on a different audio track.
+
+Professional camcorders typically create containers with one channel per track.
 
 ### Editing workflow with streams
 
@@ -77,6 +79,10 @@ The goal in this project is to create a bilingual video file, each language trac
 
 What is happening in this imaginary project?
 
-1. When adding clips to the timeline, decide which channels should be used on the target audio track. A2 is a stereo track, and the voice channels from clip 2 need to be swapped (CH1 goes to the track’s CH2 and vice-versa). The effect is a mono track but should be heared as surround effect, which is accomplished by the panning.
-2. A1 and A3 are first combined in a submix track: the two 5.1 tracks are reduced to one 5.1 track. Now there is keyframed volume control on the combined result.
+1. When adding clips to the timeline, decide which channels should be used on the target audio track. A2 is a stereo track¹, and the voice channels from clip 2 need to be swapped (CH1 goes to the track’s CH2 and vice-versa). The effect is a mono track but should be heared as surround effect, which is accomplished by the panning.
+2. A1 and A3 are first combined in a submix track: the two 5.1 tracks² are reduced to one 5.1 track. Now there is keyframed volume control on the combined result.
 3. Finally, all channels are routed to the master track which is another virtual submix track, with the difference that it has 18 input channels so the languages can be routed to separate output tracks. The voices are also mapped to 5.1 with a panning effect.
+
+¹ To be more precise: A2 is a two-channel track whereby the channels are used to create a stereo sound image. (They could also be used for a different purpose.)
+
+² Again, A1 and A3 are six-channel tracks, and they are used to create a 5.1 sound image.
