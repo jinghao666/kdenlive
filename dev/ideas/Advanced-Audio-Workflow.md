@@ -1,4 +1,4 @@
-# Advanced Audio Workflow
+[[_TOC_]]
 
 
 ## Status
@@ -18,7 +18,7 @@ Currently, support for tracks and channels is limited. For example, for a clip w
 ### Inputs
 
 * [In-depth introduction to audio editing](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382. This is the main document for this idea.
-* [Channel Export Mapping in Audacity](https://manual.audacityteam.org/man/advanced_mixing_options.html)
+* [Channel Export Mapping in Audacity][adc-amo]
 
 
 ## Additional notes
@@ -86,3 +86,20 @@ What is happening in this imaginary project?
 ¹ To be more precise: A2 is a two-channel track whereby the channels are used to create a stereo sound image. (They could also be used for a different purpose.)
 
 ² Again, A1 and A3 are six-channel tracks, and they are used to create a 5.1 sound image.
+
+
+## Work to do
+
+(See also section 2.2.3 in the main PDF.)
+
+Clip instances in the timeline need their own channel mapping. The mapping on the clip in the project bin only sets the defaults.
+
+Add a mapping UI where channels can be mapped. This can be [either a matrix](https://invent.kde.org/kde/kdenlive/-/issues/382#note_23135) or a graphical interface [as e.g. Audacity provides][adc-amo].
+
+Add an audio card selection entry in the settings.
+
+Route the output channels to the audio card outputs.
+
+Add and remove channels on an audio track.
+
+[adc-amo]: https://manual.audacityteam.org/man/advanced_mixing_options.html
