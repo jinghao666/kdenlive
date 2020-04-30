@@ -4,7 +4,7 @@ Speed effects are different from other effects in that they alter the length of 
 
 There are different challenges that arise with speed change.
 
-* When slowing down, intermediate frames are needed. This is done e.g. by [slowmoVideo](slowmovideo.granjow.net/) using optical flow.
+* When slowing down, intermediate frames are needed. This is done e.g. by [slowmoVideo](http://slowmovideo.granjow.net/) using optical flow.
 * When speeding up, motion blur may be desired to keep the image look natural
 * Audio also changes. Is it simply stretched, whereby pitch changes as well, or should only the speed change (but not pitch) as done e.g. by [Paulstretch](http://hypermammut.sourceforge.net/paulstretch/)?
 
