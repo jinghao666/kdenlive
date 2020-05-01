@@ -19,3 +19,5 @@ git grep -I --only-matching -E '#[0-9]+' \
     | sort --unique \
     | column -s' ' -t
 ```
+
+To see all pages, use the ~~force~~ API: [https://invent.kde.org/api/v4/projects/19/wikis](https://invent.kde.org/api/v4/projects/19/wikis)
