@@ -11,6 +11,7 @@ Bonus Features
 
 * Support **multiple output tracks**
 * When dropping a clip with multiple tracks to the timeline, add all tracks to the timeline (to separate audio tracks).
+* Add notes to channels of input clips to describe them (e.g. *Voice L* or *Environment*) for easier mapping
 
 To keep in mind:
 
