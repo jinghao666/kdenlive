@@ -3,6 +3,7 @@
 * [ ] It is explained clearly what the feature is supposed to do
 * [ ] It is clear how this can be implemented in Kdenlive
 * [ ] Usability and consistency is checked
+* [ ] has to be implemented before [Trimming](https://invent.kde.org/kde/kdenlive/-/wikis/dev/ideas/Trimming)
 
 ## Intro
 
