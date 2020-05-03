@@ -76,7 +76,7 @@ GitLab issues are considered until 2020-03-28.
 | Topic | Benefit | Description |
 | --- | --- | --- |
 | **Scope improvements** | Simon wants it | Add logarithmic scale to histogram. Check what the `%%` mean in the Vectorscope. Show better colour levels in the vector scope when everything gathers on one point. |
-| **[Secondary Colour Correction][i-scc]** | | Colour Correction for parts of the image. This first requires a solid general colour correction workflow. |
+| **[Secondary Colour Correction][i-scc]** | 🎥 | Colour Correction for parts of the image. This first requires a solid general colour correction workflow. |
 
 [i-scc]: /dev/ideas/Secondary-Colour-Correction
 
