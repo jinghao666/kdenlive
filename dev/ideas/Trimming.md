@@ -28,7 +28,9 @@ Trimming functionality consists of different parts:
 
 Workflow:
 
-1. Select a clip in the timeline
+1. Select which clip should be trimmed
+  * For mouse, this is usually done with either special positions on the clip or with special mouse tools
+  * For keyboard, the selection is usually controlled with the timeline cursor position and the active track and the activation of the trimming tool
 1. Choose a trim tool
 1. Trim the clip
 
