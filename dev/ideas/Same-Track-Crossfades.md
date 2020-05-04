@@ -39,5 +39,13 @@ In video editing applications, there are two different approaches to add a cross
 * Select clip A and use a keyboard shortcut to add a cross-fade between those clips. This variant is used mainly by professional video editing appliations.
 
 
+### What tasks are included?
+
+* Method to create a cross-fade (either via keyboard or via mouse) and modify its duration
+* Visual representation of the cross-fade in the timeline
+* Cross-fade effect with an ease-in/out function (e.g. sine instead of just linear)
+* Method to remove a cross-fade again
+
+
 
 [cfa]: https://www.homebrewaudio.com/crossfade-meaning-what-does-it-mean-to-crossfade-audio/
