@@ -5,6 +5,11 @@
 * [ ] Usability and consistency is checked
 * [ ] has to be implemented before [Trimming](https://invent.kde.org/kde/kdenlive/-/wikis/dev/ideas/Trimming)
 
+## Open questions
+
+* What kind of video transitions are used? Simple blending or any?
+
+
 ## Intro
 
 Inputs:
