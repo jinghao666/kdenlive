@@ -15,6 +15,7 @@
 Inputs:
 
 * [What Does It Mean To Crossfade Audio?][cfa]
+* [Transitions][hb] in the handbook
 
 ```
 Before:
@@ -54,3 +55,4 @@ In video editing applications, there are two different approaches to add a cross
 
 
 [cfa]: https://www.homebrewaudio.com/crossfade-meaning-what-does-it-mean-to-crossfade-audio/
+[hb]: https://kdenlive.org/en/video-editing-applications-handbook/#trans
