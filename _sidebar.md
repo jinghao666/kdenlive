@@ -6,7 +6,7 @@ Dev
 · · [3 Point Editing](dev/ideas/3-Point-Editing)  
 · · [Advanced Audio Workflow](dev/ideas/Advanced-Audio-Workflow)  
 · · [Multicam Editing](dev/ideas/Multicam-Editing)  
-· · [Same Track Crossfades](dev/ideas/Same-Track-Crossfades)  
+· · [Same Track Transition Crossfades](dev/ideas/Same-Track-transition-Crossfades)  
 · · [Secondary Colour Correction](dev/ideas/Secondary-Colour-Correction)  
 · · [Speed Change](dev/ideas/Speed-Change)  
 · · [Trimming](dev/ideas/Trimming)  
