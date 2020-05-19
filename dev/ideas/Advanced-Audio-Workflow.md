@@ -19,6 +19,7 @@ Currently, support for tracks and channels is limited. For example, for a clip w
 
 * [In-depth introduction to audio editing](https://invent.kde.org/kde/kdenlive/uploads/fec036664d3c462ffaa6d664512551c1/Audio_guide_updated_Mar_06_2020_ver01.pdf) on #382. This is the main document for this idea.
 * [Channel Export Mapping in Audacity][adc-amo]
+* [FFMPEG: Manipulating audio channels](https://trac.ffmpeg.org/wiki/AudioChannelManipulation)
 
 
 ## Additional notes
