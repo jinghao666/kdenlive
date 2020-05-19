@@ -5,7 +5,8 @@ See [Advanced Audio Workflow](/dev/ideas/Advanced-Audio-Workflow).
 
 * In this package, we only consider the **Stereo** audio.
 * Important is **channel mapping** from input clips.
-* When that is possible, extend the **timeline mixer**
+* When that is possible, extend the **timeline mixer**  
+* [see Café 42 notes](https://share.kde.org/s/bwPtC8s8C3gRggG)
 
 Bonus Features
 
