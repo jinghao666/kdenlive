@@ -16,7 +16,8 @@ Inputs:
 
 * [What Does It Mean To Crossfade Audio?][cfa]
 * [Transitions][hb] in the handbook  
-* [Same track transition][melt] in melt/MLT
+* [Same track transition][MLT] in MLT see "Introducing the Mix" and "Practicalities and Optimisations"
+* [Same track transition][melt] in melt
 
 ```
 Before:
@@ -58,3 +59,4 @@ In video editing applications, there are two different approaches to add a cross
 [cfa]: https://www.homebrewaudio.com/crossfade-meaning-what-does-it-mean-to-crossfade-audio/
 [hb]: https://kdenlive.org/en/video-editing-applications-handbook/#trans
 [melt]: https://www.mltframework.org/docs/melt/
+[MLT]: https://www.mltframework.org/docs/framework/
