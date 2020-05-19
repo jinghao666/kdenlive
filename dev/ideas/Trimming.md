@@ -10,7 +10,8 @@
 
 Inputs:
 
-* https://kdenlive.org/en/video-editing-applications-handbook/#trim
+* https://kdenlive.org/en/video-editing-applications-handbook/#trim  
+* [Café 42 inputs](https://share.kde.org/s/bwPtC8s8C3gRggG)
 
 Questions:
 
