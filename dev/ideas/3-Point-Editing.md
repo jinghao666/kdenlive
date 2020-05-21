@@ -95,7 +95,8 @@ Scope: At most one audio/video stream each is inserted (multi-track audio not co
 
 More on groups:
 
-* A clip always has an innermost group. If only one clip is affected by an operation, it can be done directly inside the group.
+* Groups are in this case more like a tag on clips – for running the operations, there are only clips on the tracks. Groups may change *which clips* are affected by an operation and *which group* the result is assigned to, but not *how* the operation works.
+* A clip always has an innermost group.
 
 ### Insert Mode
 
@@ -108,11 +109,25 @@ When moving a clip to the timeline:
 * Clips on the target track follow the insert mode rules
 * Clips on other tracks are cut and shifted to the right :question: 
 * Locked tracks are not affected
-* Groups: :question: 
+* Groups: When there is a clip at the insert position, the newly inserted clip could be added to the same group as the existing clip (unless it is only a group of the video and the corresponding audio stream).
 
 When clip already is in timeline:
 
 :question: 
+
+
+### Overwrite Mode
+
+When moving a clip to the timeline:
+
+* Clips on other tracks should not change or be blanked in the insert region. :question: 
+* Groups: The new clip overwrites some existing clips. It may make sense to add the new clip to the innermost group which the overwritten/changed clips have in common.
+
+
+### Extract Mode
+
+* Clips on other tracks are extracted as well to maintain sync amongst tracks.
+* Groups: As clip material is only removed, there are only items removed from groups.
 
 
 ## Other ideas
