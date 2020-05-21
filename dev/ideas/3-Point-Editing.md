@@ -111,9 +111,7 @@ When moving a clip to the timeline:
 * Locked tracks are not affected
 * Groups: When there is a clip at the insert position, the newly inserted clip could be added to the same group as the existing clip (unless it is only a group of the video and the corresponding audio stream).
 
-When clip already is in timeline:
-
-:question: 
+When clip already is in timeline: Moving a clip consists of two actions, removing it from the original position and inserting it at the new position. As *insert* is the opposite of *extract*, it would be intuitive to extract it at the original position and insert it at the new position.
 
 
 ### Overwrite Mode
