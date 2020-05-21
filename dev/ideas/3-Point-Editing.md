@@ -35,7 +35,7 @@ Questions:
 * What should happen in insert mode when moving a clip which is already on the timeline? Currently it behaves as if a new clip was inserted.
 
 
-## Border Cases
+## Border Case examples (20.04)
 
 Several functions have to be considered for 3-point editing:
 
@@ -65,9 +65,54 @@ When overwriting with A2/V2 selected as target tracks, the clips on A1/V1 are re
 
 When using the mouse in insert mode to drag&drop the selected clip a few frames to the right, the original space of the clip is preserved and it is inserted again, shifting everything to the right. As the clip already is on the timeline, it should probably behave the same way as in normal mode.
 
-| Before | After |
-|---|---|
-| ![image](uploads/35b118c0f1e85648afd583422de48492/image.png) | ![image](uploads/79f4f0d8d7b30507e12e988cc3191d96/image.png) |
+Furthermore, clips on other tracks are shifted as well; in the second example, the selected clip has been dragged a few frames to the right as well.
+
+| Example| Before | After |
+|---|---|---|
+|1| ![image](uploads/35b118c0f1e85648afd583422de48492/image.png) | ![image](uploads/79f4f0d8d7b30507e12e988cc3191d96/image.png) |
+|2| ![image](uploads/cdf48e42e270f38f491f616543a255d2/image.png) | ![image](uploads/5ac983ed48f80f11848cfc252d1d72bc/image.png) |
+
+
+## Handling border cases
+
+To be answered for the cases
+
+* when a clip from the project bin is moved to the timeline (insert, overwrite, …)
+* when the clip is already in the timeline and is moved
+
+are the following questions:
+
+* Which one is the target track? (Keyboard vs. mouse)
+* What happens to the clips on the target track?
+* How are clips on other tracks affected?
+* What happens to locked tracks?
+* What happens to clip groups and clips inside clip groups? Groups can be nested!
+  * Is the change added to a group if it spans a group?
+  * What if the changed region spans more than one group?
+  * What if some of the clips in a clip group are on a locked track?
+
+Scope: At most one audio/video stream each is inserted (multi-track audio not considered yet).
+
+More on groups:
+
+* A clip always has an innermost group. If only one clip is affected by an operation, it can be done directly inside the group.
+
+### Insert Mode
+
+Insert is supposed to move the clips after the insert position to the right by the length of the clip to insert. If necessary, a cut is added.
+
+When moving a clip to the timeline:
+
+* Keyboard: Target tracks are the selected tracks.
+* Mouse: Target tracks are the hovered tracks and :question: (currently the audio or video track with the same number)
+* Clips on the target track follow the insert mode rules
+* Clips on other tracks are cut and shifted to the right :question: 
+* Locked tracks are not affected
+* Groups: :question: 
+
+When clip already is in timeline:
+
+:question: 
 
 
 ## Other ideas
