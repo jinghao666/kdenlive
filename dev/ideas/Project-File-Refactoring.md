@@ -25,3 +25,29 @@ The way project files are handled currently is hat the serialised form (XML) is 
 A standard way to load saved projects is to parse it (from whatever format it is) and then create an in-memory representation of it which is very easy to work with for developers. This approach has several advantage besides usability for developers. One is that de-serialisation (loading the project file) is happening in a single place and all issues (like decimal separator, document version updates, validations) are done in that step. Afterwards, the developer does not need to worry about reading XML DOM nodes in order to get a property, but simply access the data model in memory.
 
 ![image](uploads/fca9607dd572a66c3dfd90304662ed5f/image.png)
+
+## Proposed changes
+
+### Properties
+
+Define properties explicitly instead of storing them in a QMap (where every value is converted to a string and back). Currently there is `KdenliveDoc::getDocumentProperty(const QString &name, const QString &defaultValue)` which is abused for everything.
+
+Before
+
+```c++
+QPoint KdenliveDoc::zoom() const
+{
+    return QPoint(m_documentProperties.value(QStringLiteral("zoom")).toInt(), m_documentProperties.value(QStringLiteral("verticalzoom")).toInt());
+}
+```
+
+After
+
+```c++
+QPoint KdenliveDoc::zoom() const
+{
+    return m_zoom;
+}
+```
+
+This can be done separately from the other changes.
