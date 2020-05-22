@@ -1,5 +1,10 @@
 Goal: Create an icon set which use a **consistent style** (currently different themes are mixed) and which is also available as **dark theme** variant.
 
+Two variants are possible:
+
+* Follow the [Breeze](https://github.com/KDE/breeze-icons) theme guidelines
+* Use an own icon theme
+
 Ideas:
 
 * Define some icon guidelines (see [GitLab Iconography](https://design.gitlab.com/product-foundations/iconography/) for an example)
