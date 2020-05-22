@@ -51,3 +51,29 @@ QPoint KdenliveDoc::zoom() const
 ```
 
 This can be done separately from the other changes.
+
+
+### Do not use MLT XML
+
+Change the project file from MLT XML to an own format so we do not need to encode our own settings.
+
+Before
+
+```c++
+const QByteArray KdenliveDoc::getProjectXml()
+{
+    const QByteArray result = m_document.toString().toUtf8();
+    // We don't need the xml data anymore, throw away
+    m_document.clear();
+    return result;
+}
+```
+
+After (±)
+
+```c++
+const QByteArray KdenliveDocMltSerialiser::getMltXml(KdenliveDoc doc)
+{
+    return serialiseForMlt(doc);
+}
+```
