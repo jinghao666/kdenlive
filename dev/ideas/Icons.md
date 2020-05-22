@@ -10,3 +10,22 @@ Ideas:
   1. Icons which have a tool button
   1. Icons from the default (Breeze?) theme
   1. Remaining icons
+* Check which icons should be dropped (use text only instead of wrong icon)
+
+
+## Icons
+
+bth = Breeze Theme
+
+|Status|Description|
+|---|---|
+|bth|Play|
+|missing|Play Zone |
+| missing|Loop Zone|
+|missing|Insert Zone in Project Bin|
+|missing|Enable/disable effect|
+|bth|Spacer Tool|
+|missing|Insert|
+|missing|Overwrite|
+|missing|Extract|
+|missing|Lift|
