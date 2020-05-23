@@ -3,7 +3,7 @@
 ## Status
 
 * [x] It is explained clearly what the feature is supposed to do
-* [ ] [Same-Track-Transition](https://invent.kde.org/kde/kdenlive/-/wikis/dev/ideas/Same-Track-Crossfades) has to be implemented first
+* [ ] [Same-Track-Transition](https://invent.kde.org/kde/kdenlive/-/wikis/dev/ideas/Same-Track-Transition-Crossfades) has to be implemented first
 * [ ] It is clear how this can be implemented in Kdenlive
 
 ## Intro
