@@ -1,4 +1,20 @@
-Reason: #78 and countless other issues related to serialisation/deserialisation (saving and loading project files in Kdenlive).
+This refactoring proposal can solve the following issues:
+
+* Fix serialisation[^1] issues like #78 and countless other issues
+* Store multiple timelines in one project
+* Simplify access to project properties in code and at the same time prevent some mistakes
+
+It touches the following areas:
+
+* Design of the Kdenlive project object
+* File format + schema of Kdenlive project files
+
+Things to keep in mind:
+
+* Backwards compatibility – load project files of the old format
+* Kdenlive can add other Kdenlive projects to the project bin (kind of nested timelines) 
+
+[^1]: Serialisation = creating a Kdenlive project file; loading = deserialisation
 
 Design a new way to save and load projects. It should
 
