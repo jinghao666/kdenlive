@@ -13,6 +13,7 @@ Inputs:
 
 * https://kdenlive.org/en/video-editing-applications-handbook/#3point
 * #225
+* #677
 
 Questions:
 
