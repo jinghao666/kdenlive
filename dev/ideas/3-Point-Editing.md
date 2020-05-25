@@ -1,12 +1,5 @@
 # 3-Point Editing in the timeline
 
-## Status
-
-* [x] It is explained clearly what the feature is supposed to do
-* [x] It is clear how this can be implemented in Kdenlive
-  * Tools are implemented!
-* [ ] Usability and consistency is checked
-
 ## Intro
 
 Inputs:
@@ -22,18 +15,12 @@ Questions:
 
 ## Tools
 
-Clip operations can be chosen with a shortcut, which then affects the selected audio/video track. Or by using the mouse after choosing the timeline mode (e.g. insert mode) from a dropdown – in that case, audio is not moved to the selected audio track but to the audio track with the same number as the video track (bug?).
-
-| Name | Status | Description |
-| --- | --- | --- |
-| Insert | ✔️ | Insert clip and move following clip material to the right
-| Extract | | Remove clip and move following clip material to the left
-| Overwrite | ✔️ | Replace section in timeline by clip
-| Lift | ✔️ | Remove clip from timeline, leave following clip material where it was
-
-Questions:
-
-* What should happen in insert mode when moving a clip which is already on the timeline? Currently it behaves as if a new clip was inserted.
+| Name | Description |
+| --- |  --- |
+| Insert |  Insert clip and move following clip material to the right
+| Extract | Remove clip and move following clip material to the left
+| Overwrite |  Replace section in timeline by clip
+| Lift |  Remove clip from timeline, leave following clip material where it was
 
 
 ## Handling border cases
@@ -82,7 +69,6 @@ When clip already is in timeline: Moving a clip consists of two actions, removin
 
 When moving a clip to the timeline:
 
-* Mouse: When thinking of the overwrite mode as of covering the timeline are a with another clip, moving that other clip away would again reveal the clip below (the undo operation of overwrite). So ideally, in overwrite mode, moving a clip around would first restore the original section and then overwrite the target section. However it is questionable if that is feasible. :question: 
 * Clips on other tracks should not change or be blanked in the insert region. :white_check_mark: 
 * Groups: The new clip overwrites some existing clips. It may make sense to add the new clip to the innermost group which the overwritten/changed clips have in common.
 * Spacer tool:
@@ -93,12 +79,16 @@ When moving a clip to the timeline:
 |---|---|
 | TODO | ![image](uploads/57d1c7b9152fc849168c86ae74e2fff8/image.png) |
 
+When the clip is already in the timeline (mouse): When thinking of the overwrite mode as of covering the timeline are a with another clip, moving that other clip away would again reveal the clip below (the undo operation of overwrite). So ideally, in overwrite mode, moving a clip around would first restore the original section and then overwrite the target section. However it is questionable if that is feasible. :question: 
+
 
 ### Extract Mode
 
 * Clips on other tracks are extracted as well to maintain sync amongst tracks.
 * Groups: As clip material is only removed, there are only items removed from groups.
 * Spacer Tool: Should probably be disabled in Extract Mode :question:
+
+When clip is already on the timeline: Behave the same way as insert mode as the modes are coupled :question: 
 
 
 
@@ -116,9 +106,10 @@ Several functions have to be considered for 3-point editing:
 
 In the situation below, when the clip region to use for overwriting (with <kbd>b</kbd>), the left hand site of the group is replaced entirely.
 
-| Before | After |
-|---|---|
-| ![image](uploads/33f81ef16dde4e8daad7b97f80b733c2/image.png) | ![image](uploads/ba1c54525135f43b58edb8d5699fa17a/image.png) |
+| What |Before | After |
+|---|---|--|
+| Overwrite | ![image](uploads/33f81ef16dde4e8daad7b97f80b733c2/image.png) | ![image](uploads/ba1c54525135f43b58edb8d5699fa17a/image.png) |
+| Extract section | ![image](uploads/84eb979c78541d9be8e4767914363b0a/image.png) | ![image](uploads/102acea957f31b2690db728e5b010505/image.png) |
 
 
 ### Drag and drop timeline clip in insert mode adds space
