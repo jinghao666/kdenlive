@@ -82,7 +82,8 @@ When clip already is in timeline: Moving a clip consists of two actions, removin
 
 When moving a clip to the timeline:
 
-* Clips on other tracks should not change or be blanked in the insert region. :question: 
+* Mouse: When thinking of the overwrite mode as of covering the timeline are a with another clip, moving that other clip away would again reveal the clip below (the undo operation of overwrite). So ideally, in overwrite mode, moving a clip around would first restore the original section and then overwrite the target section. However it is questionable if that is feasible. :question: 
+* Clips on other tracks should not change or be blanked in the insert region. :white_check_mark: 
 * Groups: The new clip overwrites some existing clips. It may make sense to add the new clip to the innermost group which the overwritten/changed clips have in common.
 * Spacer tool:
   * When moving content to the right, there is no difference to insert mode as nothing can be overwritten.
@@ -97,7 +98,7 @@ When moving a clip to the timeline:
 
 * Clips on other tracks are extracted as well to maintain sync amongst tracks.
 * Groups: As clip material is only removed, there are only items removed from groups.
-* Spacer Tool: :question:
+* Spacer Tool: Should probably be disabled in Extract Mode :question:
 
 
 
