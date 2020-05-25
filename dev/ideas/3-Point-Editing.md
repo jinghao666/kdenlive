@@ -36,44 +36,6 @@ Questions:
 * What should happen in insert mode when moving a clip which is already on the timeline? Currently it behaves as if a new clip was inserted.
 
 
-## Border Case examples (20.04)
-
-Several functions have to be considered for 3-point editing:
-
-* Tracks on the timeline: which ones are affected?
-* Grouped clips: How are clips affected, if they are in the same group and time range, but on different tracks?
-* Locked tracks: Tracks can be locked, in that case they should not be affected
-* Active tracks: Tracks can be marked as active, in which case they serve as 
-
-### Overwrite clip in group
-
-In the situation below, when the clip region to use for overwriting (with <kbd>b</kbd>), the left hand site of the group is replaced entirely.
-
-| Before | After |
-|---|---|
-| ![image](uploads/33f81ef16dde4e8daad7b97f80b733c2/image.png) | ![image](uploads/ba1c54525135f43b58edb8d5699fa17a/image.png) |
-
-### Overwrite clip affects other tracks
-
-When overwriting with A2/V2 selected as target tracks, the clips on A1/V1 are removed as well.
-
-| Before | After |
-|---|---|
-| ![image](uploads/b15df17626397f84d52dc7a3ca43efac/image.png) | ![image](uploads/911f1ea47aaab84fd7d77058f06bb1f9/image.png) |
-
-
-### Drag and drop timeline clip in insert mode adds space
-
-When using the mouse in insert mode to drag&drop the selected clip a few frames to the right, the original space of the clip is preserved and it is inserted again, shifting everything to the right. As the clip already is on the timeline, it should probably behave the same way as in normal mode.
-
-Furthermore, clips on other tracks are shifted as well; in the second example, the selected clip has been dragged a few frames to the right as well.
-
-| Example| Before | After |
-|---|---|---|
-|1| ![image](uploads/35b118c0f1e85648afd583422de48492/image.png) | ![image](uploads/79f4f0d8d7b30507e12e988cc3191d96/image.png) |
-|2| ![image](uploads/cdf48e42e270f38f491f616543a255d2/image.png) | ![image](uploads/5ac983ed48f80f11848cfc252d1d72bc/image.png) |
-
-
 ## Handling border cases
 
 To be answered for the cases
@@ -91,6 +53,7 @@ are the following questions:
   * Is the change added to a group if it spans a group?
   * What if the changed region spans more than one group?
   * What if some of the clips in a clip group are on a locked track?
+* How does the spacer tool behave?
 
 Scope: At most one audio/video stream each is inserted (multi-track audio not considered yet).
 
@@ -105,11 +68,11 @@ Insert is supposed to move the clips after the insert position to the right by t
 
 When moving a clip to the timeline:
 
-* Keyboard: Target tracks are the selected tracks.
+* Keyboard: Target tracks are the selected tracks. :white_check_mark: 
 * Mouse: Target tracks are the hovered tracks and :question: (currently the audio or video track with the same number)
-* Clips on the target track follow the insert mode rules
-* Clips on other tracks are cut and shifted to the right :question: 
-* Locked tracks are not affected
+* Clips on the target track follow the insert mode rules :white_check_mark: 
+* Clips on other active tracks are cut and shifted to the right :question: 
+* Locked and inactive tracks are not affected :white_check_mark: 
 * Groups: When there is a clip at the insert position, the newly inserted clip could be added to the same group as the existing clip (unless it is only a group of the video and the corresponding audio stream).
 
 When clip already is in timeline: Moving a clip consists of two actions, removing it from the original position and inserting it at the new position. As *insert* is the opposite of *extract*, it would be intuitive to extract it at the original position and insert it at the new position.
@@ -121,12 +84,62 @@ When moving a clip to the timeline:
 
 * Clips on other tracks should not change or be blanked in the insert region. :question: 
 * Groups: The new clip overwrites some existing clips. It may make sense to add the new clip to the innermost group which the overwritten/changed clips have in common.
+* Spacer tool:
+  * When moving content to the right, there is no difference to insert mode as nothing can be overwritten.
+  * When moving content to the left, clips should overwrite existing content. :question: 
+
+|Status|Description|
+|---|---|
+| TODO | ![image](uploads/57d1c7b9152fc849168c86ae74e2fff8/image.png) |
 
 
 ### Extract Mode
 
 * Clips on other tracks are extracted as well to maintain sync amongst tracks.
 * Groups: As clip material is only removed, there are only items removed from groups.
+* Spacer Tool: :question:
+
+
+
+## Border Case examples (20.04)
+
+Several functions have to be considered for 3-point editing:
+
+* Tracks on the timeline: which ones are affected?
+* Grouped clips: How are clips affected, if they are in the same group and time range, but on different tracks?
+* Locked tracks: Tracks can be locked, in that case they should not be affected
+* Target tracks: When inserting clips by keyboard, they will be inserted in the target track.
+* Active tracks: Tracks which are active react to operations like insert, extract, etc.
+
+### Overwrite clip in group
+
+In the situation below, when the clip region to use for overwriting (with <kbd>b</kbd>), the left hand site of the group is replaced entirely.
+
+| Before | After |
+|---|---|
+| ![image](uploads/33f81ef16dde4e8daad7b97f80b733c2/image.png) | ![image](uploads/ba1c54525135f43b58edb8d5699fa17a/image.png) |
+
+
+### Drag and drop timeline clip in insert mode adds space
+
+When using the mouse in insert mode to drag&drop the selected clip a few frames to the right, the original space of the clip is preserved and it is inserted again, shifting everything to the right. As the clip already is on the timeline, it should probably behave the same way as in normal mode.
+
+Furthermore, clips on other tracks are shifted as well; in the second example, the selected clip has been dragged a few frames to the right as well.
+
+| Example| Before | After |
+|---|---|---|
+|1| ![image](uploads/35b118c0f1e85648afd583422de48492/image.png) | ![image](uploads/79f4f0d8d7b30507e12e988cc3191d96/image.png) |
+|2| ![image](uploads/cdf48e42e270f38f491f616543a255d2/image.png) | ![image](uploads/5ac983ed48f80f11848cfc252d1d72bc/image.png) |
+
+
+### Overwrite with locked audio track crashes
+
+#694
+
+
+### Using spacer tool in overwrite mode
+
+See #677
 
 
 ## Other ideas
