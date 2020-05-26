@@ -1,7 +1,7 @@
 This refactoring proposal can solve the following issues:
 
 * Fix serialisation[^1] issues like #78 and countless other issues
-* Store multiple timelines in one project
+* Store multiple timelines in one project (#228, #226, #227)
 * Simplify access to project properties in code and at the same time prevent some mistakes
 
 It touches the following areas:
@@ -12,7 +12,7 @@ It touches the following areas:
 Things to keep in mind:
 
 * Backwards compatibility – load project files of the old format
-* Kdenlive can add other Kdenlive projects to the project bin (kind of nested timelines) 
+* Kdenlive can add other Kdenlive projects to the project bin (kind of nested timelines) (#226)
 
 [^1]: Serialisation = creating a Kdenlive project file; loading = deserialisation
 
