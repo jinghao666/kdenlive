@@ -22,6 +22,6 @@ git grep -I --only-matching -E '#[0-9]+' \
 
 ## All pages + menu sidebar
 
-To see all pages, use the ~~force~~ API: [https://invent.kde.org/api/v4/projects/19/wikis](https://invent.kde.org/api/v4/projects/19/wikis)
+To see all pages https://invent.kde.org/multimedia/kdenlive/-/wikis/pages, or use the ~~force~~ API: [https://invent.kde.org/api/v4/projects/19/wikis](https://invent.kde.org/api/v4/projects/19/wikis)
 
 GitLab Wiki has some limitations for the sidebar as it does not show all pages. This wiki is therefore using a [custom sidebar which is editable](/_sidebar). It is [generated with Node.js](https://invent.kde.org/eugster/node-area-41) from the JSON returned by the API.
