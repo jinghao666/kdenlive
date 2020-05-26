@@ -1,6 +1,8 @@
 #### Main Pages
 
 * [Home](home)
+* Cafe
+  * [next](cafe/next)
 * Dev
   * [Ideas](dev/Ideas)
     * [3-Point-Editing](dev/ideas/3-Point-Editing)
